@@ -10,4 +10,8 @@ function calculateTax() {
   
   result.innerHTML = `Your Total Price Is : ${total}$`;
   result.style.display = "block";
+  if (amount < 0) {
+    window.alert("Please Enter a Positive Number");
+    result.style.display = "none";
+  }
 }
