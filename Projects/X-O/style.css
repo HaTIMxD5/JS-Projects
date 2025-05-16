@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+}
+#d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8, #d9 {
+  width: 150px;
+  height: 150px;
+  border: 3px solid white;
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#d1, #d4, #d7 {
+  border-left: transparent;
+}
+#d1, #d3 {
+  border-top: transparent;
+}
+#d7 {
+  border-bottom: transparent;
+}
+#d2 {
+  border-top: transparent;
+}
+#d8, #d9 {
+  border-bottom: transparent;
+}
+#d3, #d6, #d9 {
+  border-right: transparent;
+}
+#d1, #d4, #d7, #d2, #d3 {
+  top: 150px;
+  left: 500px;  
+}
+#d4, #d5, #d6 {
+  top: 300px;
+}
+#d7, #d8, #d9 {
+  top: 450px;
+}
+#d2, #d5, #d8 {
+  left: 650px;
+}
+#d3, #d6, #d9 {
+  left: 800px;
+}
+.O, .X{
+  left: 100px;  
+}
+.O {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 15px solid white;
+  top: 50px;
+  transform: translate(-40%, 10%);
+}
+.X {
+  top: 150px;
+  /* animation: trans 0.2s;
+  transform-origin: 0 60px; */
+}
+.X:before, .X:after {
+  content: "";
+  width: 15px;
+  height: 120px;
+  background: white;
+  border-radius: 3px;
+  position: absolute;
+  rotate: 45deg;
+}
+.X:after {
+  rotate: -45deg;
+}
+#d-1 div span, #d-2 div span, #d-3 div span {
+  position: absolute;
+  top: 15px;
+  left: 65px;
+}
+/* @keyframes trans {
+  0% {
+    transform: scale(0.1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
