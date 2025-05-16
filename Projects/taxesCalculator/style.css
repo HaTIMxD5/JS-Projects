@@ -17,21 +17,27 @@ h1 {
   top: 20%;
   left: 650px;
 }
-#ipt {
+#ipt, #perIpt {
   width: 300px;
   height: 30px;
-  top: 230px;
+  top: 250px;
   left: 625px;
   padding-left: 15px;
 }
-#ipt:active {
-  border: none;
-  text-decoration-style: none;
-}
-span {
+#dol, #per {
   color: black;
-  top: 238px;
+  font-weight: bold;
+  top: 258px;
   left: 630px;
+}
+#perIpt {
+  width: 100px;
+  height: 20px;
+  top: 220px;
+  padding-left: 20px;
+}
+#per {
+  top: 222px;
 }
 button {
   width: 150px;
@@ -50,4 +56,16 @@ button:hover {
 }
 button:active {
   background: rgb(87, 85, 85);
+}
+section {
+  width: 300px;
+  height: 20px;
+  color: white;
+  border: 5px solid white;
+  border-radius: 10px;
+  font-size: x-large;
+  top: 370px;
+  left: 620px;
+  padding: 10px;
+  display: none;
 }

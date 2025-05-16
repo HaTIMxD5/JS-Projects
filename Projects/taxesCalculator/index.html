@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taxes Calculator</title>
+  <title>Tax Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main id="container">
-    <h1>Taxes Calculator</h1>
+    <h1>Tax Calculator</h1>
     <div>
-      <input type="text" id="ipt">
-      <span>$</span>
+      <input type="text" id="ipt" placeholder="Enter The Amount">
+      <input type="text" id="perIpt" placeholder="Enter (%)">
+      <span id="dol">$</span>
+      <span id="per">%</span>
     </div>
-    <button>Calculate</button>
+    <section id="result"></section>
+    <button id="btn" onclick="calculateTax()">Calculate</button>
   </main>
   <script src="script.js"></script>
 </body>
